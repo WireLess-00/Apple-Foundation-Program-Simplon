@@ -4,7 +4,11 @@
 
  À l'aide de la multiplication, mettez à jour la valeur à 30 à l'aide de l'affectation composée "*=". Imprimez la valeur de la variable après chaque affectation.
  */
-
+var begin = 10
+begin += 5
+print(begin)
+begin *= 2
+print(begin)
 /*:
  ## Exercice 9/14 :
  Créez une variable "piggyBank" qui commence à 0 et que vous utiliserez pour suivre vos gains et vos dépenses. Pour chaque point ci-dessous, utilisez les incréments raccourcis "+=", "*=", "-=" et "/=" appropriés pour mettre à jour le solde de votre tirelire.
@@ -16,37 +20,53 @@
  5. Vous dépensez 3 dollars chez un dépanneur.
  Imprimez le solde de votre tirelire après chaque étape.
  */
-
+var piggyBank = 0
+print(piggyBank)
+piggyBank += 10
+print(piggyBank)
+piggyBank += 20
+print(piggyBank)
+piggyBank /= 2
+print(piggyBank)
+piggyBank *= 3
+print(piggyBank)
+piggyBank -= 3
+print(piggyBank)
 /*:
  ## Exercice 10/14 :
  La caractéristique de base de votre application de suivi de la condition physique est le comptage des pas. Créez une variable appelée step et initialisez-la à 0, puis augmentez sa valeur de 1 pour simuler un utilisateur qui fait un pas. Imprimez la valeur de step.
  */
-
+var step = 0
+step += 1
+print(step)
 /*:
  ## Exercice 11/14 :
  Votre application de suivi de la condition physique suit la distance parcourue. Créez une variable appelée distance de type Double et initialisez-la à 50. Cela représentera un utilisateur ayant parcouru 50 pieds.
 
  Vous décidez cependant d'afficher la distance en mètres. 1 mètre est approximativement égal à 3 pieds. Utilisez un opérateur d'affectation composé pour convertir la distance en mètres. Imprimez le résultat.
  */
-
+var distance: Double = 50
+distance /= 3
+print(distance)
 /*:
  ## Exercice 12/14 :
  Imprimez ce que vous pensez que la valeur de 10 + 2 * 5 est. Ensuite, imprimez l'expression actuelle print(10 + 2 * 5).
  */
-
+print(20)
+print(10 + 2 * 5)
 /*:
  Dans une déclaration distincte, ajoutez les parenthèses nécessaires pour que l'addition ait lieu avant la multiplication.
  */
-
+print((10 + 2) * 5)
 /*:
  Imprimez ce que vous pensez que la valeur de 4 * 9 - 6 / 2 évalue. Ensuite, imprimez l'expression réelle.
  */
-
+print(7)
+print(4 * 9 - 6 / 2) /* On fait d'abbord la multiplication dun coté puis la division de l'autre et on fini par soustraire les deux résultats*/
 /*:
  Dans une déclaration distincte, ajoutez les parenthèses nécessaires pour que la soustraction soit prioritaire sur la multiplication et la division.
  */
-
-
+print(4 * (9 - 6) / 2) /* Dans ce cas là, ça fera la soustraction, la multiplication puis la division*/
 /*:
  ## Exercice 13/14 :
  Une caractéristique que vous pourriez vouloir offrir aux utilisateurs est d'afficher leur température corporelle actuelle. Créez une constante appelée tempInFahrenheit égale à 98.6.
@@ -55,11 +75,19 @@
 
  Imprimez tempInCelsius.
  */
+let tempInFahrenheit = 98.6
+let tempInCelsius = (tempInFahrenheit - 32) * (5.0/9.0)
+print(tempInCelsius)
+
 
 /*:
  ## Exercice 14/14 :
  Créez une constante entière x avec une valeur de 10, et une constante de type Double y avec une valeur de 3.2. Créez une constante appelée multipliedAsIntegers égale à x multiplié par y. Est-ce que cela compile ? Si ce n'est pas le cas, corrigez-le en convertissant votre Double en un Int dans l'expression mathématique. Imprimez le résultat.
  */
+let x: Int = 10
+let y: Double = 3.2
+let multipliedAsIntegers = x * Int(y) /* x * y ça ne compile pas car c'est deux type de var différents */
+print(multipliedAsIntegers)
 
 
 

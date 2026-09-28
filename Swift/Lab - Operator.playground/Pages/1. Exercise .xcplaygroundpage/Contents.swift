@@ -15,29 +15,39 @@
  Vous décidez de construire une armoire et vous voulez savoir avant de la construire, la superficie que cela va prendre dans votre pièce. Créez 2 constantes, "width" et "height", avec les valeurs de 10 et 20 respectivement.
  Créez une constante "area" qui sera le résultat de la multiplication des 2 précédentes constantes et imprimez le résultat.
  */
-
+let width = 10
+let height = 20
+let area = width * height
+print (area)
 /*:
  ## Exercice 2/14 :
  Vous décidez de diviser votre armoire en deux pour la mettre dans deux pièces différentes. Vous voulez savoir si, en la divisant équitablement, vous aurez assez de place pour ranger vos plus grands objets.
  Créez une constante "roomArea" qui sera le résultat de la division de "area" par deux. Imprimez le résultat.
 
  */
-
+let roomArea = area / 2
+print (roomArea)
 /*:
  ## Exercice 3/14 :
  Créez une constante "perimeter" dont la valeur est égale à "width + width + height + height", et imprimez le résultat.
  */
-
+let perimeter = width + width + height + height
+print (perimeter)
 /*:
  ## Exercice 4/14 :
  Créez une constante "integerDivisionResult" qui est le résultat de la division de 10 par 3, et imprimez le résultat.
  */
-
+let integerDivisionResult = 10 / 3
+print(integerDivisionResult)
 /*:
 
  Créez deux constantes, "double10" et "double3", initialisez-les à 10 et 3, et déclarez-les en tant que "Double". Déclarez une dernière constante "divisionResult" égale à la division de "double10" par "double3". Imprimez le résultat de "divisionResult". Quelle est la différence avec la division entière ? Imprimez ce que vous remarquez.
  */
-
+let double10: Double = 10
+let double3: Double = 3
+let divisionResult = double10 / double3
+print(divisionResult)
+//La différence c'est que du coup ça ne se limite plus à l'entier, c'est précis, ça affiche les ,
 /*:
  ## Exercice 5/14 :
  Étant donnée la valeur de pi (3.1415927), créez une constante "radius" avec une valeur de 5.0, et calculez le diamètre et la circonférence du cercle en utilisant les équations suivantes :
@@ -47,6 +57,11 @@
  Imprimez le résultat.
  */
 let pi = 3.1415927
+let radius = 5.0
+let diameter = 2 * radius
+let circumference = 2 * pi * radius
+print(diameter)
+print(circumference)
 /*:
  ## Exercice 6/14 :
  Votre application de fitness enregistre le rythme cardiaque de vos utilisateurs, mais vous aurez sûrement envie d'afficher le rythme cardiaque moyen sur la dernière heure.
@@ -58,7 +73,12 @@ let pi = 3.1415927
  Imprimez le résultat.
 
  */
-
+let heartRate1: Int = 60
+let heartRate2: Int = 80
+let heartRate3: Int = 100
+let addedHR = heartRate1 + heartRate2 + heartRate3
+let averageHR = addedHR / 3
+print(averageHR)
 /*:
  Maintenant, créez trois nouvelles constantes, "heartRate1D", "heartRate2D" et "heartRate3D", égales aux précédentes valeurs "heartRate1", "heartRate2" et "heartRate3". Ces nouvelles constantes doivent être de type "Double".
 
@@ -67,11 +87,22 @@ let pi = 3.1415927
  Imprimez le résultat. Est-il différent de la précédente moyenne ? Pourquoi ou pourquoi pas ?
 
  */
+let heartRate1D: Double = Double (heartRate1)
+let heartRate2D: Double = Double (heartRate2)
+let heartRate3D: Double = Double (heartRate3)
+let addedHRD = heartRate1D + heartRate2D + heartRate3D
+let averageHRD = addedHRD / 3
+print(averageHRD)
+//On a alors un chiffre à virgule car le variables du desssus étaient de type Int mais maintenant Double
+
 
 /*:
  ## Exercice 7/14 :
  Imaginez que pendant la journée, un utilisateur a fait 3 467 pas sur un objectif de 10 000 pas. Créez une constante "steps" et une constante "goal". Les deux constantes seront de type "Double" pour que vous puissiez faire les bons calculs. "steps" devrait avoir la valeur 3 467 et "goal" 10 000. Créez une constante "percentOfGoal" égale au pourcentage de pas faits dans la journée. Imprimez "percentOfGoal".
  (Pour trouver la formule de calcul d'un pourcentage, Google est votre ami !)
  */
-
+let steps: Double = 3467
+let goal: Double = 10000
+let percentOfGoal = steps / goal * 100
+print(percentOfGoal)
 //: page 1 sur 2  |  [Next:](@next)
